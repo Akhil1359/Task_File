@@ -1,0 +1,73 @@
+
+  <div
+    class="container"
+    style="border-radius: 5px; background-color: #f2f2f2; padding: 20px;"
+  >
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 style="text-align:right;">Books Store</h1>
+        </div>
+        <div class="col-lg-3 offset-lg-3">
+          <button type="button" routerLink="/employee-form" class="btn btn-primary">Add Book</button>&nbsp;
+          <button class="btn btn-primary" routerLink="/employee-details" type="button">Get Book</button>
+        </div>
+      </div>
+      <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="title"> Title </label><br />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Title"
+          id="title"
+          formControlName="title"
+          required
+        /><br />
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label><br />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Author"
+          id="author"
+          formControlName="author"
+          required
+        /><br />
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label for="price">Price</label><br />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Price"
+              id="price"
+              formControlName="price"
+              required
+            /><br />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label for="published">Published Date</label><br />
+            <input
+              type="date"
+              class="form-control"
+              id="published"
+              formControlName="published"
+              required
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="btn btn-success"
+        type="submit"
+      >
+        Submit</button
+      ><br /><br />
+  </form>
+  </div>
+  

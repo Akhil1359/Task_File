@@ -1,0 +1,30 @@
+<div class="container" style="border-radius: 5px; background-color: #f2f2f2; padding: 20px">
+  <div class="col">
+    <div *ngFor="let employee of getBooks"  style="border-radius: 5px; background-color: white" >
+      <h4>
+        <pre>
+        Title                  :{{ employee.title }}
+        Author                 :{{ employee.author}}
+        Price                  :{{employee.price}} rs
+        Published              :{{employee.published}}
+        </pre>
+      </h4>
+    </div>
+  </div>
+<div class="offset-lg-11">
+    <button class="btn btn-primary float-right" routerLink="/employee-form">
+      Back
+    </button>
+  </div>
+</div>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+  crossorigin="anonymous"
+></script>
