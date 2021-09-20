@@ -23,29 +23,6 @@ export class EmployeeFormComponent implements OnInit {
       published: ['', Validators.required],
     });
   }
-  /*submitted = false;
-  data: any;
-  message:any;
-
-  get diagonastics() {
-    return JSON.stringify(this.employeeForm.value);
-  }
-
-  get title() {
-    return this.employeeForm.get('title');
-  }
-
-  get author() {
-    return this.employeeForm.get('author');
-  }
-
-  get price() {
-    return this.employeeForm.get('Price');
-  }
-
-  get publishedDate() {
-    return this.employeeForm.get('publishedDate');
-  }*/
 
   onSubmit() {
     this.service.addBook(this.employeeForm.value)
