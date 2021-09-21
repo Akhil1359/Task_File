@@ -27,7 +27,6 @@ export class EmployeeFormComponent implements OnInit {
   onSubmit() {
     this.service.addBook(this.employeeForm.value)
     .subscribe(data => {
-      //this.router.navigate(['getBooks']);
     });
   }
 }
